@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<h1>Home Page</h1>
+
+<%   if(locals.names || locals.email || locals.blogs) {%>
+  <p><%= names %> <%= email  %> <%= blogs  %></p>
+
+<% } else {%>
+      <p>hiç yazı yazılmamış</p>
+
+<% } %>
